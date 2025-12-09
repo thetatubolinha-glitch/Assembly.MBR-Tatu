@@ -1,2 +1,3 @@
 # Assembly.MBR-Tatu
-My codes in Assembly.
+
+Hello 👋, my name is Tatu, and this repository will be just my assembly code 👁️
