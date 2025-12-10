@@ -24,11 +24,11 @@
             loop    pattern ;-- Loop Routine --;
 
             Reset: stosb ;-- Reset Routine --;
-            mov     al, $20 ;-- ove al to $20 --;
-            jmp     pattern ;--
+            mov     al, $20 ;-- Move al to $20 (reset colors) --;
+            jmp     pattern ;-- Return to pattern --;
 
-            Stop:
-            jmp     Stop
+            Stop: ;-- Stop pattern --;
+            jmp     Stop ;-- Stop loop --;
 
     times 510 - ($-$$) db 0
     dw 0xAA55
