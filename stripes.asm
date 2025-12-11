@@ -8,7 +8,7 @@
         int     0x10
         mov     ax, 0xA000
         mov     es ,ax
-        xor     di, di ;-= CX = 0 =-;
+        xor     di, di ;-= di = 0 -=;
         xor     dx, dx ;-= DX = 0 =-;
         ;--=Graphic=--;
 
@@ -74,4 +74,5 @@
         ;--= Effects end =--;
 
         times       510 - ($-$$) db 0
+
         dw          0xAA55
